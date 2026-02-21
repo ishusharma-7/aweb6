@@ -19,17 +19,11 @@
         }
     </script>
     <style>
-        :root {
-            --brand-green: #22a353;
-            --brand-light: #e8f5e9;
-            
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
         }
-        .bg-brand { background-color: var(--brand-green); }
-        .text-brand { color: var(--brand-green); }
-        .bg-brand-light { background-color: var(--brand-light); }
-        .hero-bg { background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000');
-                   background-size: cover;
-                   background-position: center;}
     </style>
 </head>
 <body class="font-sans text-gray-800">
@@ -41,9 +35,7 @@
         </div>
         <div>
             <span><i class="fas fa-location-dot text-brand"></i> Chhindwara, (M.P.)</span>
-            <span><a href="#" class="text-brand ml-5">Login</a></span>
         </div>
-        
     </div>
 
     <nav class="flex justify-between items-center px-10 py-4 sticky top-0 bg-white shadow-sm z-50">
@@ -55,10 +47,10 @@
             </div>
         </div>
         <ul class="hidden md:flex space-x-8 text-sm font-medium">
-            <li><a href="index.html" class="text-brand">Home</a></li>
-            <li><a href="about.html" class="hover:text-brand">About Us</a></li>
+            <li><a href="#" class="text-brand">Home</a></li>
+            <li><a href="#" class="hover:text-brand">About Us</a></li>
             <li><a href="#" class="hover:text-brand">Products</a></li>
-            <li><a href="manufactor.html" class="hover:text-brand">Manufacturing</a></li>
+            <li><a href="#" class="hover:text-brand">Manufacturing</a></li>
             <li><a href="#" class="hover:text-brand">Location</a></li>
             <li><a href="#" class="hover:text-brand">Contact</a></li>
         </ul>
@@ -121,46 +113,18 @@
         </div>
     </section>
 
-    <section class="py-20 px-10 bg-gray-50">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4">Why Choose Micro Seeds?</h2>
-            <p class="text-gray-500 max-w-2xl mx-auto">We combine traditional farming wisdom with modern agricultural technology to deliver superior seeds and comprehensive farming solutions.</p>
-        </div>
-        <div class="grid md:grid-cols-4 gap-6">
-            <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center hover:shadow-md transition">
-                <div class="text-brand text-2xl mb-4"><i class="fas fa-leaf"></i></div>
-                <h4 class="font-bold mb-2">Premium Quality Seeds</h4>
-                <p class="text-xs text-gray-500 leading-relaxed">Certified high-yield seeds with superior genetic traits for maximum crop productivity.</p>
-            </div>
-            <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center hover:shadow-md transition">
-                <div class="text-brand text-2xl mb-4"><i class="fas fa-award"></i></div>
-                <h4 class="font-bold mb-2">10+ Years Experience</h4>
-                <p class="text-xs text-gray-500 leading-relaxed">Trusted by thousands of farmers across the country for consistent quality and reliability.</p>
-            </div>
-            <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center hover:shadow-md transition">
-                <div class="text-brand text-2xl mb-4"><i class="fas fa-users"></i></div>
-                <h4 class="font-bold mb-2">Expert Support</h4>
-                <p class="text-xs text-gray-500 leading-relaxed">Professional agronomist guidance and customer support throughout your growing season.</p>
-            </div>
-            <div class="bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center hover:shadow-md transition">
-                <div class="text-brand text-2xl mb-4"><i class="fas fa-truck"></i></div>
-                <h4 class="font-bold mb-2">Nationwide Delivery</h4>
-                <p class="text-xs text-gray-500 leading-relaxed">Fast and reliable delivery to your doorstep with proper packaging and handling.</p>
-            </div>
+    <section class="py-10 bg-brand text-white text-center mx-10 rounded-xl mb-10">
+        <h4 class="text-xl font-semibold mb-6">Our Impact in Numbers</h4>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div><p class="text-2xl font-bold">10+</p><p class="text-xs opacity-80">Years of Experience</p></div>
+            <div><p class="text-2xl font-bold">50K+</p><p class="text-xs opacity-80">Satisfied Farmers</p></div>
+            <div><p class="text-2xl font-bold">200+</p><p class="text-xs opacity-80">Seed Varieties</p></div>
+            <div><p class="text-2xl font-bold">15+</p><p class="text-xs opacity-80">States Covered</p></div>
         </div>
     </section>
 
-    <section class="bg-brand py-20 px-10 text-center text-white">
-        <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Farm?</h2>
-        <p class="mb-8 opacity-90 max-w-xl mx-auto">Join thousands of successful farmers who trust Micro Seeds for their agricultural needs. Get started with a free consultation today.</p>
-        <div class="flex justify-center space-x-4">
-            <button class="bg-white text-brand px-6 py-2 rounded font-medium">Free Consultation</button>
-            <button class="border border-white px-6 py-2 rounded font-medium hover:bg-white hover:text-brand transition">Contact Us</button>
-        </div>
-    </section>
-
-    <footer class="bg-emerald-950 text-white py-16 px-10">
-        <div class="grid md:grid-cols-4 gap-12 text-sm">
+    <footer class="bg-[#022c22] text-white py-16 px-10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 text-sm">
             <div class="space-y-4">
                 <div class="flex items-center space-x-2">
                     <div class="w-8 h-8 bg-brand rounded-full flex items-center justify-center text-white font-bold">MS</div>
@@ -169,7 +133,7 @@
                 <p class="text-gray-400 leading-relaxed">Leading provider of quality seeds and innovative agricultural technology solutions for sustainable farming.</p>
             </div>
             <div>
-                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Quick Links</h5>
+                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand">Quick Links</h5>
                 <ul class="space-y-2 text-gray-400">
                     <li><a href="#" class="hover:text-white">About Us</a></li>
                     <li><a href="#" class="hover:text-white">Products</a></li>
@@ -178,20 +142,18 @@
                 </ul>
             </div>
             <div>
-                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Products</h5>
+                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand">Products</h5>
                 <ul class="space-y-2 text-gray-400">
                     <li><a href="#" class="hover:text-white">Vegetable Seeds</a></li>
                     <li><a href="#" class="hover:text-white">Field Crop Seeds</a></li>
                     <li><a href="#" class="hover:text-white">Organic Fertilizers</a></li>
-                    <li><a href="#" class="hover:text-white">Agricultural Equipment</a></li>
                 </ul>
             </div>
             <div>
-                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Contact Info</h5>
+                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand">Contact Info</h5>
                 <ul class="space-y-3 text-gray-400">
-                    <li class="flex items-start"><i class="fas fa-location-dot mt-1 mr-3 text-brand"></i> Shikarpur, Chhindwara (M.P.) - 480001</li>
+                    <li class="flex items-start"><i class="fas fa-location-dot mt-1 mr-3 text-brand"></i> Chhindwara (M.P.) - 480001</li>
                     <li><i class="fas fa-phone mr-3 text-brand"></i> +91 96245 61577</li>
-                    <li><i class="fas fa-phone mr-3 text-brand"></i> +91 88391 33618</li>
                     <li><i class="fas fa-envelope mr-3 text-brand"></i> microseeds.agritech@gmail.com</li>
                 </ul>
             </div>
