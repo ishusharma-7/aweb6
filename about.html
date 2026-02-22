@@ -6,17 +6,31 @@
     <title>Micro Seeds & Agritech Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>About Us - Micro Seeds</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#22a353', // Derived from brand logo
+                        brandLight: '#dcf0d1', // The background color in your screenshots
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         :root {
             --brand-green: #22a353;
             --brand-light: #e8f5e9;
+            
         }
         .bg-brand { background-color: var(--brand-green); }
         .text-brand { color: var(--brand-green); }
         .bg-brand-light { background-color: var(--brand-light); }
+        .hero-bg { background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000');
+                   background-size: cover;
+                   background-position: center;}
     </style>
-    
 </head>
 <body class="font-sans text-gray-800">
 
@@ -29,25 +43,49 @@
             <span><i class="fas fa-location-dot text-brand"></i> Chhindwara, (M.P.)</span>
             <span><a href="#" class="text-brand ml-5">Login</a></span>
         </div>
+        
     </div>
 
-    <nav class="flex justify-between items-center px-10 py-4 sticky top-0 bg-white shadow-sm z-50">
-        <div class="flex items-center space-x-2">
-            <div class="w-10 h-10 bg-brand rounded-full flex items-center justify-center text-white font-bold">MS</div>
-            <div>
-                <h1 class="font-bold text-lg leading-none">Micro Seeds</h1>
-                <p class="text-[10px] text-gray-500">& Agritech Solutions</p>
+    <nav class="sticky top-0 bg-white shadow-sm z-50">
+        <div class="flex justify-between items-center px-4 md:px-10 py-4">
+            <div class="flex items-center space-x-2">
+                <div class="w-9 h-9 md:w-10 md:h-10 bg-brand rounded-full flex items-center justify-center text-white font-bold shrink-0">MS</div>
+                <div>
+                    <h1 class="font-bold text-lg leading-none">Micro Seeds</h1>
+                    <p class="text-[10px] text-gray-500">& Agritech Solutions</p>
+                </div>
+            </div>
+        
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="index.html" class="hover:">Home</a></li>
+                <li><a href="about.html" class="text-brand">About Us</a></li>
+                <li><a href="#" class="hover:text-brand">Products</a></li>
+                <li><a href="manufactor.html" class="hover:text-brand">Manufacturing</a></li>
+                <li><a href="location.html" class="hover:text-brand">Location</a></li>
+                <li><a href="#" class="hover:text-brand">Contact</a></li>
+            </ul>
+        <div class="flex items-center space-x-3">
+                <button class="hidden sm:block bg-brand text-white px-4 py-2 rounded text-sm hover:bg-green-700 transition">
+                    Get Quote
+                </button>
+                
+                <button id="menu-toggle" class="lg:hidden text-gray-700 p-2 focus:outline-none">
+                    <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+                </button>
             </div>
         </div>
-        <ul class="hidden md:flex space-x-8 text-sm font-medium">
-            <li><a href="index.html" class="hover:text-brand">Home</a></li>
-            <li><a href="about.html" class="text-brand">About Us</a></li>
-            <li><a href="#" class="hover:text-brand">Products</a></li>
-            <li><a href="manufactor.html" class="hover:text-brand">Manufacturing</a></li>
-            <li><a href="location.html" class="hover:text-brand">Location</a></li>
-            <li><a href="#" class="hover:text-brand">Contact</a></li>
-        </ul>
-        <button class="bg-brand text-white px-4 py-2 rounded text-sm hover:bg-green-700 transition">Get Quote</button>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-inner">
+            <ul class="flex flex-col p-4 space-y-4 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-brand block py-2">Home</a></li>
+                <li><a href="about.html" class="text-brand block py-2 border-b border-gray-50">About Us</a></li>
+                <li><a href="#" class="hover:text-brand block py-2 border-b border-gray-50">Products</a></li>
+                <li><a href="manufactor.html" class="hover:text-brand block py-2 border-b border-gray-50">Manufacturing</a></li>
+                <li><a href="location.html" class="hover:text-brand block py-2 border-b border-gray-50">Location</a></li>
+                <li><a href="#" class="hover:text-brand block py-2 border-b border-gray-50">Contact</a></li>
+                <li><button class="w-full bg-brand text-white py-3 rounded mt-2">Get Quote</button></li>
+            </ul>
+        </div>
     </nav>
 
     <section class="py-16 text-center">
@@ -199,10 +237,24 @@
     </footer>
 
     <script>
-    // Toggle the 'hidden' class on the menu when the button is clicked
-    document.querySelector('#menu-btn').addEventListener('click', () => {
-        document.querySelector('#mobile-menu').classList.toggle('hidden');
-    });
-</script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            // Toggle visibility of menu
+            mobileMenu.classList.toggle('hidden');
+            
+            // Switch icon between bars and "X"
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
 
 </body>
+</html>
