@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Seeds & Agritech Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#22a353', // Derived from brand logo
+                        brandLight: '#dcf0d1', // The background color in your screenshots
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --brand-green: #22a353;
+            --brand-light: #e8f5e9;
+            
+        }
+        .bg-brand { background-color: var(--brand-green); }
+        .text-brand { color: var(--brand-green); }
+        .bg-brand-light { background-color: var(--brand-light); }
+        .hero-bg { background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000');
+                   background-size: cover;
+                   background-position: center;}
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <div class="hidden md:flex justify-between items-center px-10 py-2 bg-gray-50 text-xs border-b">
+        <div class="flex space-x-4">
+            <span><i class="fas fa-phone text-brand"></i> +91 96245 61577</span>
+            <span><i class="fas fa-envelope text-brand"></i> microseeds.agritech@gmail.com</span>
+        </div>
+        <div>
+            <span><i class="fas fa-location-dot text-brand"></i> Chhindwara, (M.P.)</span>
+            <span><a href="login.html" class="text-brand ml-5">Login</a></span>
+        </div>
+        
+    </div>
+
+    <nav class="sticky top-0 bg-white shadow-sm z-50">
+        <div class="flex justify-between items-center px-4 md:px-10 py-4">
+            <div class="flex items-center space-x-2">
+                <div class="w-9 h-9 md:w-10 md:h-10 bg-brand rounded-full flex items-center justify-center text-white font-bold shrink-0">MS</div>
+                <div>
+                    <h1 class="font-bold text-lg leading-none">Micro Seeds</h1>
+                    <p class="text-[10px] text-gray-500">& Agritech Solutions</p>
+                </div>
+            </div>
+        
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-brand">Home</a></li>
+                <li><a href="about.html" class="hover:text-brand">About Us</a></li>
+                <li><a href="#" class="hover:text-brand">Products</a></li>
+                <li><a href="manufactor.html" class="hover:text-brand">Manufacturing</a></li>
+                <li><a href="location.html" class="hover:text-brand">Location</a></li>
+                <li><a href="contact.html" class="text-brand">Contact</a></li>
+            </ul>
+        <div class="flex items-center space-x-3">
+                <button class="hidden sm:block bg-brand text-white px-4 py-2 rounded text-sm hover:bg-green-700 transition">
+                    Get Quote
+                </button>
+                
+                <button id="menu-toggle" class="lg:hidden text-gray-700 p-2 focus:outline-none">
+                    <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-inner">
+            <ul class="flex flex-col p-4 space-y-4 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-brand block py-2">Home</a></li>
+                <li><a href="about.html" class="hover:text-brand block py-2 border-b border-gray-50">About Us</a></li>
+                <li><a href="#" class="hover:text-brand block py-2 border-b border-gray-50">Products</a></li>
+                <li><a href="manufactor.html" class="hover:text-brand block py-2 border-b border-gray-50">Manufacturing</a></li>
+                <li><a href="location.html" class="hover:text-brand block py-2 border-b border-gray-50">Location</a></li>
+                <li><a href="contact.html" class="text-brand block py-2 border-b border-gray-50">Contact</a></li>
+                <li><button class="w-full bg-brand text-white py-3 rounded mt-2">Get Quote</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-12 px-4">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            Get in touch with our agricultural experts. We're here to help you choose the right products and solutions for your farming needs.
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold mb-6">Get in Touch</h2>
+                
+                <div class="bg-white p-5 rounded-lg border border-gray-200 flex items-start gap-4 shadow-sm">
+                    <div class="bg-blue-50 p-3 rounded-full text-blue-600">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm">Call Us</h3>
+                        <p class="text-xs text-gray-500 mb-2">Speak directly with our agricultural experts</p>
+                        <p class="text-sm font-semibold text-gray-800">+91 94248 41322</p>
+                        <p class="text-sm font-semibold text-gray-800">+91 88391 33418</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg border border-gray-200 flex items-start gap-4 shadow-sm">
+                    <div class="bg-green-50 p-3 rounded-full text-green-600">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm">Email Us</h3>
+                        <p class="text-xs text-gray-500 mb-2">Send us your detailed requirements</p>
+                        <p class="text-sm font-semibold text-gray-800">microseedandagreetech@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg border border-gray-200 flex items-start gap-4 shadow-sm">
+                    <div class="bg-green-50 p-3 rounded-full text-green-500">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm">WhatsApp</h3>
+                        <p class="text-xs text-gray-500 mb-2">Quick responses and instant support</p>
+                        <p class="text-sm font-semibold text-gray-800">+91 88391 33418</p>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 p-5 rounded-lg border border-green-200 flex items-start gap-4 shadow-sm">
+                    <div class="bg-green-100 p-3 rounded-full text-green-600">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-green-900">Visit Our Store</h3>
+                        <p class="text-sm text-gray-700 mt-1">Shikarpur, Hanuman Mandir Ke Piche</p>
+                        <p class="text-sm text-gray-700">Chhindwara (M.P.) - 480001</p>
+                        <p class="text-xs text-gray-500 mt-2 font-medium">Mon-Fri: 8AM-6PM, Sat: 8AM-4PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-1">Send Us Your Query</h2>
+                    <p class="text-sm text-gray-500 mb-8">Fill out the detailed form below and we'll get back to you within 24 hours with expert advice.</p>
+                    
+                    <form action="#" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" placeholder="Enter your full name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 outline-none transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number *</label>
+                                <input type="tel" placeholder="Enter your phone number" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" placeholder="Enter your email address" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 outline-none transition-all">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Query Type *</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 outline-none bg-white">
+                                <option>General Inquiry</option>
+                                <option>Product Support</option>
+                                <option>Wholesale/Bulk Order</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Subject *</label>
+                            <input type="text" placeholder="Brief subject of your query" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 outline-none transition-all">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Detailed Message *</label>
+                            <textarea rows="4" placeholder="Please provide details about your requirements, crop type, farm size, location, or any specific questions you have..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 outline-none transition-all"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-md transition-colors shadow-md">
+                            Send Query
+                        </button>
+                        
+                        <p class="text-center text-[10px] text-gray-400 mt-4">
+                            Your query will be securely saved and reviewed by our expert team.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Frequently Asked Questions</h2>
+                <p class="text-gray-500">Quick answers to common questions about our products and services.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-bold text-lg mb-4">What is your minimum order quantity?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        For retail customers, there's no minimum order. For wholesale partners, minimum orders vary by product. Contact us for specific requirements.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-bold text-lg mb-4">Do you provide technical support?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Yes! Our agronomists provide free technical support including crop planning, disease management, and harvesting guidance throughout the growing season.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-bold text-lg mb-4">What are your delivery options?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        We offer nationwide delivery with same-day dispatch for orders placed before 2 PM. Delivery typically takes 3-5 business days depending on location.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="font-bold text-lg mb-4">Do you offer bulk pricing?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Yes, we offer attractive bulk pricing for large orders and wholesale partnerships. Contact our sales team for customized pricing based on your requirements.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer class="bg-emerald-950 text-white py-16 px-10">
+        <div class="grid md:grid-cols-4 gap-12 text-sm">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-brand rounded-full flex items-center justify-center text-white font-bold">MS</div>
+                    <h1 class="font-bold text-lg">Micro Seeds</h1>
+                </div>
+                <p class="text-gray-400 leading-relaxed">Leading provider of quality seeds and innovative agricultural technology solutions for sustainable farming.</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Quick Links</h5>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Products</a></li>
+                    <li><a href="#" class="hover:text-white">Manufacturing</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Products</h5>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Vegetable Seeds</a></li>
+                    <li><a href="#" class="hover:text-white">Field Crop Seeds</a></li>
+                    <li><a href="#" class="hover:text-white">Organic Fertilizers</a></li>
+                    <li><a href="#" class="hover:text-white">Agricultural Equipment</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Contact Info</h5>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="flex items-start"><i class="fas fa-location-dot mt-1 mr-3 text-brand"></i> Shikarpur, Chhindwara (M.P.) - 480001</li>
+                    <li><i class="fas fa-phone mr-3 text-brand"></i> +91 96245 61577</li>
+                    <li><i class="fas fa-phone mr-3 text-brand"></i> +91 88391 33618</li>
+                    <li><i class="fas fa-envelope mr-3 text-brand"></i> microseeds.agritech@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-emerald-900 mt-16 pt-8 text-center text-gray-500 text-xs">
+            © 2024 Micro Seeds and Agritech Solutions. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            // Toggle visibility of menu
+            mobileMenu.classList.toggle('hidden');
+            
+            // Switch icon between bars and "X"
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+    </script>
+
+</body>
+</html>
